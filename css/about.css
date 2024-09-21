@@ -1,0 +1,402 @@
+
+#initial{
+    font-size:17px;
+    font-weight: normal;
+    position: relative;
+    top: 13px;
+    left: 10%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(240, 210, 60);
+}
+body{
+    background-color:rgba(2, 2, 2, 0.938) ;
+}
+ol{
+    position: relative;
+    bottom: 31px;
+    left:65% ;
+    list-style-type: none;
+    margin: 10px ;
+    padding:0px ;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+li{
+    margin: 10px;
+    
+}
+li a{
+    color:white;
+    text-decoration: none; 
+  position: relative;
+}
+li a::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom:-2px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(240, 210, 60);
+    visibility: visible;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+li a:hover::after{
+    
+   transform: scaleX(1);
+}
+header{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    height:100px;
+    z-index:1000;
+    background-color: rgba(2, 2, 2, 0);
+    backdrop-filter: blur(10px);
+   
+}
+#hrtitle{
+    position: relative;
+    height: 3px;
+    width: 42%;
+    bottom:32px;
+    left: 20%;
+    background-color: rgba(172, 147, 21, 0.81);
+    border:none;
+    border-radius: 15%;
+}
+#h2am{
+    width:15%;
+    position: relative;
+    right:10%;
+    color:white
+}
+#title{
+    position:relative;
+    right:28%;
+    top: 17px;
+}
+.aboutme{
+font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top:70px;
+    height: 390px;
+    width: 65%;
+    border-radius: 20px;
+    background-color: rgba(32, 31, 31, 0.949);
+    border: 1px solid ;
+}
+
+#usr{
+    width: 30%;
+    position: relative;
+   right: 3%;
+    bottom: 15px;
+    border-radius: 100%;
+    animation: slide 0.8s ease-out forwards;
+}
+@keyframes slide {
+    0%{
+transform: translateX(100%);
+    }
+    
+}
+.skill{
+    
+    width: 65%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 10px;
+    right: 15%;
+   
+}
+
+h3{
+position: relative;
+right: 22%;
+top: 55px;
+font-size: 25px;
+color: white;
+}
+#hrskill{
+    height: 3px;
+    width: 50%;
+    background-color: rgba(172, 147, 21, 0.81);
+    border:none;
+    border-radius: 15%;
+    position: relative;
+  top: 15px;
+ left: 10%;
+}
+#buttonDiv{
+    position: relative;
+    right: 15%;
+    top: 30px;
+   
+   
+}
+
+.button{
+    height: 40px;
+    width: 110px;
+    background:transparent ;
+    color:grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+   transition: background-color 0.3s, color 0.3s;
+}
+.illuminate{
+  color:rgb(240, 210, 60);
+  background-color: rgba(142, 121, 17, 0.367);
+}
+.spento{
+   
+    color:grey;
+}
+.lang{
+    height: 80px;
+    width: 210px;
+    padding: 5px;
+    margin: 10px;
+   
+    
+    background: transparent;
+    border: 1px solid rgb(240, 210, 60);
+    border-radius: 5px;
+   
+}
+.lang:hover{
+    p{
+        top: -45px;
+    }
+    .tooltip{
+      
+        visibility: visible;
+    }
+}
+.biografia{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    position:relative;
+    top:-230px ;
+    left: 45%;
+    width: 50%;
+    max-height: 30%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    position:relative;
+    top: -30px;
+    left: 10px;
+}
+.panel{
+    position: relative;
+    top: 30px;
+    width: 80%;
+}
+.imgIcon{
+    position: relative;
+    right: 50px;
+    top: 17px;
+}
+#section1{
+   
+   
+    position: relative;
+    right: 10px;
+    top: 40px;
+   
+    
+}
+#section2{
+    display: none;
+    position: relative;
+    right: 10px;
+    top: 40px;
+    
+  
+}
+.tooltip{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    position: relative;
+    left: 12px;
+   font-size: 12px;
+    visibility: hidden;
+}
+@media (max-width:750px) {
+    .body{
+        width: 1%;
+
+    }
+    .aboutme{
+        width: 80%;
+        margin: auto ;
+       
+    }
+   #title{
+    position:relative;
+    right:12%;
+    
+   }
+   #h2am{
+    position: relative;
+    left:12% ;
+    width: 100%;
+    bottom:20px;
+   }
+   #hrtitle{
+    position: relative;
+    width: 90%;
+    top: 110%;
+    left: 14.5%;
+   }
+   #usr{
+    position: relative;
+    width: 30%;
+   right: -13%;
+   }
+   .skill{
+    position: relative;
+    margin: auto;
+    top:40px;
+    left: -3%;
+   }
+   #hrskill{
+    left:18%;
+    width: 85%;
+
+   }
+   h3{
+    left:-42%;
+   }
+  .lang{
+    margin: auto;
+  }
+  #section1{
+    margin:auto;
+
+  }
+  #section2{
+    margin: auto;
+  }
+  .panel{
+    position: relative;
+    left: 2.6%;
+    top: 70px;
+    
+  }
+   ol{
+    left:2%;
+     top:2%;
+   }
+   #initial{
+    left:7%;
+   }
+   #buttonDiv{
+    width: 150%;
+    left: -20%;
+   }
+   .biografia{
+    font-size: small;
+    top: 25%;
+    left: 12%;
+    width: 80%;
+   }
+}
+@media (width:2000px) {
+    #usr{
+        width: 20%;
+    }
+    @media (min-width:500px) and (max-width:1000px) {
+        .aboutme{
+            position: relative;
+            height: 900px;
+        }
+       
+    }
+}
+@media (min-width:800px) and (max-width:1499px) {
+    .body{
+        width: 1%;
+
+    }
+    .aboutme{
+        width: 80%;
+        margin: auto ;
+       
+    }
+   #title{
+    position:relative;
+    right:15%;
+    
+   }
+   #h2am{
+    position: relative;
+    left:12% ;
+    width: 100%;
+    bottom:20px;
+   }
+   #hrtitle{
+    position: relative;
+    width: 90%;
+    top: 110%;
+    left: 14.5%;
+   }
+   #usr{
+    position: relative;
+    width: 20%;
+   right: -13%;
+   }
+   .skill{
+    position: relative;
+    margin: auto;
+    top:40px;
+   }
+   #hrskill{
+    left:18%;
+    width: 85%;
+
+   }
+  .lang{
+    margin: auto;
+  }
+  #section1{
+    margin:auto;
+
+  }
+  #section2{
+    margin: auto;
+  }
+  .panel{
+    position: relative;
+    left: 2.6%;
+    top: 40px;
+    
+  }
+   ol{
+    left:2%;
+     top:2%;
+   }
+   #initial{
+    left:7%;
+   }
+   #buttonDiv{
+    width: 150%;
+   }
+   .biografia{
+    font-size: small;
+    top: 25%;
+    left: 15%;
+    width: 80%;
+   }
+}

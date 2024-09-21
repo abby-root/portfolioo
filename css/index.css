@@ -1,0 +1,184 @@
+#initial{
+    font-size:17px;
+    position: relative;
+    top: 13px;
+    left: 10%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(240, 210, 60);
+}
+
+#immagine{
+    height: 120%;
+    position: relative;
+    left: 280px;
+    bottom :246px ;
+    border-radius: 100%;
+    border: 3px solid rgb(253, 234, 142);
+    box-shadow: 10px 10px 80px 5px rgb(255, 213, 0,0.07) ,
+    10px -10px 80px 5px rgba(255, 213, 0, 0.07),
+    -10px 10px 80px 5px rgba(255, 213, 0, 0.07),
+    -10px -10px 80px 5px rgb(255, 213, 0,0.07)
+    ;
+    animation:slide 0.7s ease-out forwards;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(100%);
+    }
+}
+h4{
+    position: relative;
+    right: 275px;
+    bottom :-29px ;
+    font-size: 14px;
+    color: rgb(242, 218, 100);
+}
+#title{
+    position: relative;
+    right: 136px;
+    font-size: 45px;
+    animation: slideName 0.7s ease-out forwards;
+
+}
+@keyframes slideName{
+    0%{
+        transform: translateY(100%);
+    }
+}
+h3{
+    position: relative;
+    right: 227px;
+    top: -25px;
+    font-size: 15px;
+    background: linear-gradient(180deg,#f9f1f1 40%,rgb(255, 217, 27) 100%);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideName 0.5s ease-out forwards;
+    
+}
+#h4b{
+    position: relative;
+    right: 227px;
+    top: -35px;
+    font-size: 13px;
+    color: #f9f1f1;
+    animation: slideNameh2b 0.5s ease-out forwards;
+}
+@keyframes slideNameh2b{
+    0%{
+        transform: translateX(50%);
+    }
+}
+
+#profile{
+    height: 270px;
+    width: 50%;
+    
+ 
+    position: relative;
+    top: 170px;
+    right:80px;
+            
+}
+
+
+#descrizione{
+    position: relative;
+    top: 40px;
+    right:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+body{
+    background-color:rgba(2, 2, 2, 0.938) ;
+}
+ol{
+    position: relative;
+    bottom: 35px;
+    left: 65%;
+    list-style-type: none;
+    margin: 10px ;
+    padding:0px ;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+li{
+    margin: 10px;
+    
+}
+li a{
+    color:white;
+    text-decoration: none; 
+  position: relative;
+}
+li a::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom:-2px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(240, 210, 60);
+    visibility: visible;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+li a:hover::after{
+    
+   transform: scaleX(1);
+}
+header{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    height:40px;
+    z-index:1000;
+    background-color: rgba(2, 2, 2, 0);
+    backdrop-filter: blur(10px);
+}
+@media (max-width:800px) {
+    
+    #descrizione{
+        top: 60%;
+        left: 120%;
+    }
+    h4{
+        right: 115%;
+        top: -25px;
+    }
+        #immagine{
+            height: 70%;
+            position: relative;
+            left: 30%;
+            bottom: 340px;
+        }
+        #title{
+            top: -50px;
+            right: 100%;
+        }
+        h3{
+            top: -80px;
+            right: 134%;
+            width: 190%;
+            font-size: 110%;
+        }
+        #h4b{
+            right: 116%;
+            width: 140%;
+            top: -90px;
+        }
+        ol{
+            left:2%;
+             top:2%;
+           }
+           #initial{
+            left:6%;
+           }
+           #profile{
+            top: 320px;
+            right:60px;
+           }
+    
+}
