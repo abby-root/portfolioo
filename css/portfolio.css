@@ -94,7 +94,9 @@ header{
 
 p{
     position: relative;
-    top: 2%;
+    top: 20px;
+    width: 80%;
+    font-size: larger;
 }
 .imgProject{
 position: block;
@@ -106,7 +108,24 @@ top: 12px;
 right:74%;
 
 }
-@media  (max-width:1024px){
+#imagebuttonlike{
+    width: 100%;
+}
+.button{
+  
+   width: 15%;
+   background-color: transparent;
+   border: none;
+}
+#buttons{
+    position: relative;
+    top: 15px;
+    left: 60%;
+}
+#imagebuttonlink{
+    width: 10%;
+}
+@media  (max-width:900px){
    body{
     width: 50%;
    }
@@ -132,13 +151,29 @@ right:74%;
      }
      .project{
         width: 207%;
+        height: 600px;
         margin: auto;
         
       
      }
+     #buttons{
+        position: relative;
+        top: 40px;
+        left: 60%;
+        
+     }
+     #imagebuttonlink{
+        width:45px;
+    }
+     .button{
+       
+        width: 60px;
+        background-color: transparent;
+        border: none;
+     }
       
 }
-@media (min-width:800px) {
+@media (min-width:900px) {
   
     .project{
         position: relative;
