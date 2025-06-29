@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCTO</title>
+     <link rel='stylesheet' type='text/css' media='screen' href='css/pcto.css'>
+</head>
+<body>
+     <header>
+        <p id="initial">abby();</p>
+       
+       <ol>
+            <li><a href="index.html">Home</a></li>
+           
+        </ol>
+    </header>
+    <div class="slider">
+    <button class="prev">&#10094;</button>
+    <div class="slide-container">
+        <img src="assets\Flutter X Bno (1).png" class="slide active" alt="Immagine 1">
+        <img src="assets\Flutter X Bno.jpg" class="slide" alt="Immagine 2">
+        <img src="assets\Flutter X Bno (2).png" class="slide" alt="Immagine 3">
+    </div>
+    <button class="next">&#10095;</button>
+</div>
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) slide.classList.add('active');
+        });
+    }
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+        showSlide(currentIndex);
+    });
+
+    document.querySelector('.next').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    });
+
+    function zoomImage(element) {
+        // Chiudi tutte le immagini zoomate prima
+        document.querySelectorAll('.half').forEach(half => {
+            if (half !== element) {
+                half.classList.remove('zoomed');
+            }
+        });
+
+        // Toggle zoom sull'immagine cliccata
+        element.classList.toggle('zoomed');
+    }
+</script>
+
+</body>
+</html>
